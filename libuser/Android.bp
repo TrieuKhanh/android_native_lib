@@ -1,0 +1,14 @@
+cc_binary {
+	name: "CALL-libuser",
+	srcs: ["src/**/*.cpp"],
+	shared_libs: [
+		"liblog",
+		"libprime",
+	],
+	cppflags: [
+           "-Wall",
+           "-Werror",
+           "-fexceptions",
+    ],
+	vendor: true,
+}
